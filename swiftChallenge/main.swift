@@ -114,5 +114,3 @@ switch sleepQualityWeekly {
     default:
         break
 }
-
-+
