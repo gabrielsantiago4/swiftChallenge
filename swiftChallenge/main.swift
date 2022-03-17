@@ -39,7 +39,7 @@ ________________________________________________________________________________
 | Welcome to SleepTracker! This program works as a sleeping hours calculator, in which you can track more closely the  |
 | overall quality of your sleep weekly. It works in a very straightforward and simple way: for each day in the week,   |
 | you must insert an approximate amount of the hours you slept in the previous night, as well as a grade, in a scale   |
-| from 0 to 5, of how well you consider you're feeling after waking up.                                                |
+| from 1 to 5, of how well you consider you're feeling after waking up.                                                |
 |                                                                                                                      |
 | Shall we begin?                                                                                                      |
 ------------------------------------------------------------------------------------------------------------------------
@@ -79,9 +79,10 @@ switch sleepQualityWeekly {
     case 1:
         print ("""
 
-- According to your evaluation, your sleep quality over this week can be considered very poor, and your sleep schedule must be urgently changed.
-  Medical literature strongly recommends that an adult should sleep at least 49 hours per week, and disrespecting this  minimum  amount  can
-  lead to serious health issues. You should consider checking the following materials:
+- According to our evaluation, your sleep quality over this week can be considered very poor, and may be causing serious harm to your health.
+  Your sleep schedule must be urgently changed. Medical literature strongly recommends that an adult should sleep at least 49 hours per week,
+  and disrespecting this minimum amount can lead to all kinds of health issues. Visit a doctor as soon as possible, and you should consider
+  checking the following materials:
 
 
  _________________________________________________________________________________________
@@ -100,13 +101,50 @@ switch sleepQualityWeekly {
  |                 https://www.risescience.com/blog/poor-sleep-hygiene                   |
  -----------------------------------------------------------------------------------------
 
-
 """)
 
     case 2:
-        print("")
+        print ("""
+
+- Overall, your sleep quality can be considered bad, either because of sleep deprivation or improper sleep hygiene. It is recommended
+  that you consider visiting a doctor to investigate if you're suffering from any kind of disorder. In addition, you should check the
+  following links, containing tips for good sleep practices and useful information that might help you to improve your quality of life:
+
+
+ _________________________________________________________________________________________
+ |                              What is Sleep Hygiene?:                                  |
+ |_______________________________________________________________________________________|
+ |                   https://www.sleepfoundation.org/sleep-hygiene                       |
+ -----------------------------------------------------------------------------------------
+ _________________________________________________________________________________________
+ |                         How To Determine Poor Sleep Quality:                          |
+ |_______________________________________________________________________________________|
+ |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
+ -----------------------------------------------------------------------------------------
+
+""")
+        
     case 3:
-        print("")
+        print ("""
+
+- Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
+  up tired or sleepy can be strong signs that you're facing problems over the night, and they are probably shortening important stages of your
+  sleep cyles. These cycles are
+  
+
+
+ _________________________________________________________________________________________
+ |                                The 4 Stages of Sleep:                                 |
+ |_______________________________________________________________________________________|
+ |           https://www.verywellhealth.com/the-four-stages-of-sleep-2795920             |
+ -----------------------------------------------------------------------------------------
+ _________________________________________________________________________________________
+ |                         How To Determine Poor Sleep Quality:                          |
+ |_______________________________________________________________________________________|
+ |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
+ -----------------------------------------------------------------------------------------
+
+""")
     case 4:
         print("")
     case 5:
