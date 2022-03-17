@@ -19,7 +19,7 @@ func getSleepInfo (day : String) {
     print("Quality score: ")
     let quality = readLine()!
     
-    guard var hoursOfSleep = Int(hours), var sleepQuality = Int(quality) else {
+    guard let hoursOfSleep = Int(hours), let sleepQuality = Int(quality) else {
         exit(0)
     }
     
@@ -132,7 +132,6 @@ switch sleepQualityWeekly {
   of your sleep cyles. These cycles are
   
 
-
  _________________________________________________________________________________________
  |                                The 4 Stages of Sleep:                                 |
  |_______________________________________________________________________________________|
@@ -146,7 +145,26 @@ switch sleepQualityWeekly {
 
 """)
     case 4:
-        print("")
+        print ("""
+
+- Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
+  up tired or sleepy can be strong signs that you're having problems resting at night, and these problems are probably shortening important
+  stages of your sleep cyles. These cycles determine directly the quality of your sleeping hours, and you can learn more about them and how
+  to improve their quality in the following articles:
+
+  
+ _________________________________________________________________________________________
+ |                                The 4 Stages of Sleep:                                 |
+ |_______________________________________________________________________________________|
+ |           https://www.verywellhealth.com/the-four-stages-of-sleep-2795920             |
+ -----------------------------------------------------------------------------------------
+ _________________________________________________________________________________________
+ |                         How To Determine Poor Sleep Quality:                          |
+ |_______________________________________________________________________________________|
+ |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
+ -----------------------------------------------------------------------------------------
+
+""")
     case 5:
         print("")
     default:
