@@ -128,8 +128,8 @@ switch sleepQualityWeekly {
         print ("""
 
 - Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
-  up tired or sleepy can be strong signs that you're facing problems over the night, and they are probably shortening important stages of your
-  sleep cyles. These cycles are
+  up tired or sleepy can be strong signs that you're facing problems resting over the night, and they are probably shortening important stages
+  of your sleep cyles. These cycles are
   
 
 
@@ -152,5 +152,3 @@ switch sleepQualityWeekly {
     default:
         break
 }
-
-var rato = " aaaaaa"
