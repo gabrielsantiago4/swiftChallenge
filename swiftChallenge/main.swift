@@ -153,4 +153,4 @@ switch sleepQualityWeekly {
         break
 }
 
-var rato = " aaaaa"
+var rato = " aaaaaa"
