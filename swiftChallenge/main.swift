@@ -139,9 +139,9 @@ switch sleepQualityWeekly {
  |           https://www.verywellhealth.com/the-four-stages-of-sleep-2795920             |
  -----------------------------------------------------------------------------------------
  _________________________________________________________________________________________
- |                         How To Determine Poor Sleep Quality:                          |
+ |                             5 Ways to Get More REM Sleep:                             |
  |_______________________________________________________________________________________|
- |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
+ |       https://www.sleepfoundation.org/stages-of-sleep/how-to-get-more-rem-sleep       |
  -----------------------------------------------------------------------------------------
 
 """)
@@ -150,7 +150,7 @@ switch sleepQualityWeekly {
 
 - Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
   up tired or sleepy can be strong signs that you're having problems resting at night, and these problems are probably shortening important
-  stages of your sleep cyles. agit commit
+  stages of your sleep cyles. agit commit aki
   
 
   
