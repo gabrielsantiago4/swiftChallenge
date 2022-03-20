@@ -128,9 +128,9 @@ switch sleepQualityWeekly {
         print ("""
 
 - Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
-  up tired or sleepy can be strong signs that you're facing problems resting over the night, and they are probably shortening important stages
-  of your sleep cyles. These cycles determine directly the quality of your sleeping hours, and you can learn more about them and how
-  to improve their quality in the following articles:
+  up tired or sleepy can be a strong sign that you're facing problems resting over the night, and they are probably shortening important stages
+  of your sleep cyles. These cycles affect directly the quality of your sleeping hours. You can learn more about them and how to improve their 
+  quality in the following articles:
 
 
  _________________________________________________________________________________________
