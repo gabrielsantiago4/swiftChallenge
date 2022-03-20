@@ -129,9 +129,8 @@ switch sleepQualityWeekly {
 
 - Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
   up tired or sleepy can be a strong sign that you're facing problems resting over the night, and they are probably shortening important stages
-  of your sleep cyles. These cycles affect directly the quality of your sleeping hours. You can learn more about them and how to improve their 
+  of your sleep cyles. These cycles directly affect the quality of your sleeping hours. You can learn more about them and how to improve their 
   quality in the following articles:
-
 
  _________________________________________________________________________________________
  |                                The 4 Stages of Sleep:                                 |
@@ -148,26 +147,25 @@ switch sleepQualityWeekly {
     case 4:
         print ("""
 
-- Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
-  up tired or sleepy can be strong signs that you're having problems resting at night, and these problems are probably shortening important
-  stages of your sleep cyles. agit commit aki
+- Well done! You had a good sleep schedule over this week, and your sleep quality is close to what is considered the ideal for an average adult.
+  The benefits good sleep can bring severe changes in terms of quality of life, being an essential practice when it comes to health maintenance.
+  If you want to enhance even further the quality of your sleeping hours, you should try checking the following links :
   
-
   
  _________________________________________________________________________________________
- |                                The 4 Stages of Sleep:                                 |
+ |                      17 Proven Tips to Sleep Better at Night:                         |
  |_______________________________________________________________________________________|
- |           https://www.verywellhealth.com/the-four-stages-of-sleep-2795920             |
+ |             https://www.healthline.com/nutrition/17-tips-to-sleep-better              |
  -----------------------------------------------------------------------------------------
  _________________________________________________________________________________________
- |                         How To Determine Poor Sleep Quality:                          |
+ |                        Surprising Reasons to Get More Sleep:                          |
  |_______________________________________________________________________________________|
- |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
+ |               https://www.webmd.com/sleep-disorders/benefits-sleep-more               |
  -----------------------------------------------------------------------------------------
 
 """)
     case 5:
-        print("")
+        print("Congratulations! ")
     default:
         break
 }
