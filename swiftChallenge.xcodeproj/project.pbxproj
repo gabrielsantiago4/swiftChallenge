@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36684EF327E89CA9007DDB56 /* QualityResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36684EF227E89CA9007DDB56 /* QualityResults.swift */; };
+		36684EF527E8A660007DDB56 /* SleepTRackerFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36684EF427E8A660007DDB56 /* SleepTRackerFuncs.swift */; };
 		36FFFE9A27DA1F4700BA5F35 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFFE9927DA1F4700BA5F35 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36C9F29C27E1FE7400A2317C /* DaySon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DaySon.json; sourceTree = "<group>"; };
+		36684EF227E89CA9007DDB56 /* QualityResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityResults.swift; sourceTree = "<group>"; };
+		36684EF427E8A660007DDB56 /* SleepTRackerFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTRackerFuncs.swift; sourceTree = "<group>"; };
 		36FFFE9627DA1F4700BA5F35 /* swiftChallenge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftChallenge; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FFFE9927DA1F4700BA5F35 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				36FFFE9927DA1F4700BA5F35 /* main.swift */,
-				36C9F29C27E1FE7400A2317C /* DaySon.json */,
+				36684EF227E89CA9007DDB56 /* QualityResults.swift */,
+				36684EF427E8A660007DDB56 /* SleepTRackerFuncs.swift */,
 			);
 			path = swiftChallenge;
 			sourceTree = "<group>";
@@ -122,6 +126,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36684EF327E89CA9007DDB56 /* QualityResults.swift in Sources */,
+				36684EF527E8A660007DDB56 /* SleepTRackerFuncs.swift in Sources */,
 				36FFFE9A27DA1F4700BA5F35 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

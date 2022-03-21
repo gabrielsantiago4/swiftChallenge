@@ -9,6 +9,8 @@ import Foundation
 
 var weekDict : [String : (hoursOfSleep : Int, sleepQuality : Int)] = [:]
 
+let weekQualityResults = QualityResults()
+
 func getSleepInfo (day : String) {
     
     var sleep : (Int, Int)
@@ -17,12 +19,20 @@ func getSleepInfo (day : String) {
     print("Hours of sleep: ")
     let hours = readLine()!
     print("Quality score: ")
-    let quality = readLine()!
+    var quality = readLine()!
     
-    guard let hoursOfSleep = Int(hours), let sleepQuality = Int(quality) else {
+    guard let hoursOfSleep = Int(hours), var sleepQuality = Int(quality) else {
         exit(0)
     }
     
+    while sleepQuality < 0 || sleepQuality > 5{
+        print("Insert a valid grade to your sleep quality (from 1 to 5): ")
+        var quality = readLine()!
+        guard var sleepQuality = Int(quality) else{
+            exit(0)
+        }
+    }
+        
     sleep.0 = hoursOfSleep
     sleep.1 = sleepQuality
     
@@ -75,114 +85,19 @@ if (totalHoursWeekly < 49) {
     print("- You slept \(totalHoursWeekly - 49) hours more than the minimum recommended for an average adult.")
 }
 
+
+
 switch sleepQualityWeekly {
     case 1:
-        print ("""
-
-- According to our evaluation, your sleep quality over this week can be considered very poor, and may be causing serious harm to your health.
-  Your sleep schedule must be urgently changed. Medical literature strongly recommends that an adult should sleep at least 49 hours per week,
-  and disrespecting this minimum amount can lead to all kinds of health issues. Visit a doctor as soon as possible, and you should consider
-  checking the following materials:
-
-
- _________________________________________________________________________________________
- |                  The Effects of Sleep Deprivation on Your Body:                       |
- |_______________________________________________________________________________________|
- | https://www.healthline.com/health/sleep-deprivation/effects-on-body#Respiratory-system|
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |                  Why Can't I Sleep? Reasons for Trouble Sleeping:                     |
- |_______________________________________________________________________________________|
- |   https://www.verywellmind.com/reasons-for-not-sleeping-well-and-how-to-fix-350760    |
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |              Poor Sleep Hygiene: Don't Let It Ruin Your Quality of Life               |
- |_______________________________________________________________________________________|
- |                 https://www.risescience.com/blog/poor-sleep-hygiene                   |
- -----------------------------------------------------------------------------------------
-
-""")
-
+        print (weekQualityResults.resultQuality1)
     case 2:
-        print ("""
-
-- Overall, your sleep quality can be considered bad, either because of sleep deprivation or improper sleep hygiene. It is recommended
-  that you consider visiting a doctor to investigate if you're suffering from any kind of disorder. In addition, you should check the
-  following links, containing tips for good sleep practices and useful information that might help you to improve your quality of life:
-
-
- _________________________________________________________________________________________
- |                              What is Sleep Hygiene?:                                  |
- |_______________________________________________________________________________________|
- |                   https://www.sleepfoundation.org/sleep-hygiene                       |
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |                         How To Determine Poor Sleep Quality:                          |
- |_______________________________________________________________________________________|
- |   https://www.sleepfoundation.org/sleep-hygiene/how-to-determine-poor-quality-sleep   |
- -----------------------------------------------------------------------------------------
-
-""")
-        
+        print (weekQualityResults.resultQuality2)
     case 3:
-        print ("""
-
-- Over this week, even though your sleep quality can't be considered bad, it is still not providing you the ideal rest you need daily. Waking
-  up tired or sleepy can be a strong sign that you're facing problems resting over the night, and they are probably shortening important stages
-  of your sleep cyles. These cycles directly affect the quality of your sleeping hours. You can learn more about them and how to improve their 
-  quality in the following articles:
-
- _________________________________________________________________________________________
- |                                The 4 Stages of Sleep:                                 |
- |_______________________________________________________________________________________|
- |           https://www.verywellhealth.com/the-four-stages-of-sleep-2795920             |
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |                             5 Ways to Get More REM Sleep:                             |
- |_______________________________________________________________________________________|
- |       https://www.sleepfoundation.org/stages-of-sleep/how-to-get-more-rem-sleep       |
- -----------------------------------------------------------------------------------------
-
-""")
+        print (weekQualityResults.resultQuality3)
     case 4:
-        print ("""
-
-- Well done! You had a good sleep schedule over this week, and your sleep quality is close to what is considered the ideal for an average adult.
-  The benefits good sleep can bring severe changes in terms of quality of life, being an essential practice when it comes to health maintenance.
-  If you want to enhance even further the quality of your sleeping hours, you should try checking the following links :
-  
-  
- _________________________________________________________________________________________
- |                      17 Proven Tips to Sleep Better at Night:                         |
- |_______________________________________________________________________________________|
- |             https://www.healthline.com/nutrition/17-tips-to-sleep-better              |
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |                        Surprising Reasons to Get More Sleep:                          |
- |_______________________________________________________________________________________|
- |               https://www.webmd.com/sleep-disorders/benefits-sleep-more               |
- -----------------------------------------------------------------------------------------
-
-""")
+        print (weekQualityResults.resultQuality4)
     case 5:
-        print ("""
-
-- Congratulations! The quality of your sleeping hours over this week can be considered the ideal, and an example for anyone who's seeking to improve
-  their health and life quality. Mantaining this sleep schedule will not only make you feel better during your waking hours, but will also have 
-  meaningful effects in your daily performance. Check out the following links if you want to learn more about the benefits of good sleep:
-  
- _________________________________________________________________________________________
- |                          The Benefis of a Good Night Sleep:                           |
- |_______________________________________________________________________________________|
- |      https://ed.ted.com/lessons/the-benefits-of-a-good-night-s-sleep-shai-marcu       |
- -----------------------------------------------------------------------------------------
- _________________________________________________________________________________________
- |                       How Sleep Affects Athletic Performance:                         |
- |_______________________________________________________________________________________|
- |   https://www.sleepfoundation.org/physical-activity/athletic-performance-and-sleep    |
- -----------------------------------------------------------------------------------------
-
-""")
+        print (weekQualityResults.resultQuality5)
     default:
         break
 }
