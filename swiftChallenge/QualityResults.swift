@@ -9,6 +9,28 @@ import Foundation
 
 class QualityResults {
     
+    let startMenu : String = """
+________________________________________________________________________________________________________________________
+|                                                   SLEEP TRACKER                                                      |
+|______________________________________________________________________________________________________________________|
+| Welcome to SleepTracker! This program works as a sleeping hours calculator, in which you can track more closely the  |
+| overall quality of your sleep weekly. It works in a very straightforward and simple way: for each day in the week,   |
+| you must insert an approximate amount of the hours you slept in the previous night, as well as a grade, in a scale   |
+| from 1 to 5, of how well you consider you're feeling after waking up.                                                |
+|                                                                                                                      |
+| Shall we begin?                                                                                                      |
+------------------------------------------------------------------------------------------------------------------------
+
+
+"""
+    let resultsTitle : String = """
+
+ ***********************
+ * YOUR WEEKLY RESULTS *
+ ***********************
+
+"""
+    
     let resultQuality1 : String = """
 
     - According to our evaluation, your sleep quality over this week can be considered very poor, and may be causing serious harm to your health.
