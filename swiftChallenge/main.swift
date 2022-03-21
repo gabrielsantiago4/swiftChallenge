@@ -165,7 +165,24 @@ switch sleepQualityWeekly {
 
 """)
     case 5:
-        print("Congratulations! ")
+        print ("""
+
+- Congratulations! The quality of your sleeping hours over this week can be considered the ideal, and an example for anyone who's seeking to improve
+  their health and life quality. Mantaining this sleep schedule will not only make you feel better during your waking hours, but will also have 
+  meaningful effects in your daily performance. Check out the following links if you want to learn more about the benefits of good sleep:
+  
+ _________________________________________________________________________________________
+ |                          The Benefis of a Good Night Sleep:                           |
+ |_______________________________________________________________________________________|
+ |      https://ed.ted.com/lessons/the-benefits-of-a-good-night-s-sleep-shai-marcu       |
+ -----------------------------------------------------------------------------------------
+ _________________________________________________________________________________________
+ |                       How Sleep Affects Athletic Performance:                         |
+ |_______________________________________________________________________________________|
+ |   https://www.sleepfoundation.org/physical-activity/athletic-performance-and-sleep    |
+ -----------------------------------------------------------------------------------------
+
+""")
     default:
         break
 }
