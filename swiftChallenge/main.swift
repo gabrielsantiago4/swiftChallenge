@@ -10,6 +10,27 @@ import Foundation
 var weekDict : [String : (hoursOfSleep : Int, sleepQuality : Int)] = [:]
 let weekQualityResults = QualityResults()
 
+
+
+func validateUserInput(range: ClosedRange<Int>) -> Int{
+    //variavel de controle
+    var inputInt: Int = 99
+    // enquanto input int está fora de range
+    while !range.contains(inputInt) {
+        // puxando um input e armazenando numa variavel para ser castada
+        let inputString = readLine()!
+        //cast do input / não entendi
+        if let inputCasted = Int(inputString) {
+            inputInt = inputCasted
+        } else { // não entendi
+            inputInt = 99
+        } // não entendi
+        inputInt = Int(inputString) ?? 99
+    }
+    
+    return inputInt
+}
+
 func getSleepInfo (day : String) {
     
     var sleep : (Int, Int)
@@ -18,14 +39,14 @@ func getSleepInfo (day : String) {
     print("Hours of sleep: ")
     let hours = readLine()!
     print("Quality score: ")
-    let quality = readLine()!
+    var quality = validateUserInput(range: 1...5)
     
-    guard let hoursOfSleep = Int(hours), let sleepQuality = Int(quality) else {
+    guard let hoursOfSleep = Int(hours) else {
         exit(0)
     }
 
     sleep.0 = hoursOfSleep
-    sleep.1 = sleepQuality
+    sleep.1 = quality
     
     weekDict[day] = sleep
     
