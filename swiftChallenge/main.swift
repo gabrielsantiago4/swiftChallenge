@@ -23,7 +23,7 @@ func validateUserInput(range: ClosedRange<Int>) -> Int{
             print("Invalid input")
         }
         if !range.contains(inputInt) && Int(inputString) != nil {
-            print("Please, insert a valid information")
+            print("Please, insert a valid information:")
         }
     }
     
