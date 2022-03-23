@@ -36,8 +36,7 @@ ________________________________________________________________________________
     🤢 According to our evaluation, your sleep quality over this week can be considered very poor, and may be causing serious harm to your
        health. Your sleep schedule must be urgently changed. Medical literature strongly recommends that an adult should sleep at least 49
        hours per week, and disrespecting this minimum amount can lead to all kinds of health issues. Visit a doctor as soon as possible, and
-       you should consider
-       checking the following materials:
+       you should consider checking the following materials:
 
 
        _________________________________________________________________________________________
