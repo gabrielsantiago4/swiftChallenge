@@ -35,9 +35,9 @@ func getSleepInfo (day : String) {
     var sleep : (Int, Int)
     
     print(day)
-    print("Hours of sleep: ")
+    print("⏰ Hours of sleep: ")
     let hours = validateUserInput(range: 1...24)
-    print("Quality score: ")
+    print("🛌 Quality score: ")
     let quality = validateUserInput(range: 1...5)
 
     sleep.0 = hours
@@ -65,12 +65,12 @@ let sleepQualityWeekly = (weekDict["MONDAY"]!.sleepQuality + weekDict["TUESDAY"]
 
 print(weekQualityResults.resultsTitle)
 
-print("- Hours slept this week : \(totalHoursWeekly)")
-print("- Average hours per night : \(totalHoursWeekly / 7)")
+print("🕢 Hours slept this week : \(totalHoursWeekly)")
+print("🌃 Average hours per night : \(totalHoursWeekly / 7)")
 if (totalHoursWeekly < 49) {
-    print("- You slept \(49 - totalHoursWeekly) hours less than the minumum recommended for an average adult")
+    print("👎🏽 You slept \(49 - totalHoursWeekly) hours less than the minumum recommended for an average adult")
 } else {
-    print("- You slept \(totalHoursWeekly - 49) hours more than the minimum recommended for an average adult.")
+    print("👍🏽 You slept \(totalHoursWeekly - 49) hours more than the minimum recommended for an average adult.")
 }
 
 switch sleepQualityWeekly {
