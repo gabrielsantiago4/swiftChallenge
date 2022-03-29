@@ -5,7 +5,7 @@ A SleepTracker é uma calculadora de horas de sono. A partir dela, é possível 
 
 ## O Aplicativo 💻
 
-Para a sua utilização, o usuário deve inserir, para cada dia da última semana, a quantidade de horas dormidas por noite e uma nota de 1 a 5 para descrever a qualidade do sono, sendo 1 péssimo e 5 muito bom. Ao final, os dados inseridos serão utilizados para analisar as horas dormidas na semana, a média de tempo de sono por dia, o comparativo das horas do usuario com o ideal e um diagnóstico personalizado de qualidade, que irá trazer referencias de materiais voltados à melhoria da qualidade de vida.
+Para a sua utilização, o usuário deve inserir, para cada dia da última semana, a quantidade de horas dormidas por noite e uma nota de 1 a 5 para descrever a qualidade do sono, sendo 1 péssimo e 5 muito bom. Ao final, os dados inseridos serão utilizados para analisar as horas dormidas na semana,trazendo a média de tempo de sono por dia, o comparativo das horas do usuario com o ideal e um diagnóstico personalizado de qualidade, que irá trazer referencias de materiais voltados à melhoria da qualidade de vida.
 ## Status do Projeto 🛠
 
 Em construção  
